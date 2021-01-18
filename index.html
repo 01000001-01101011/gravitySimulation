@@ -1,5 +1,18 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en-us">    
+  <style type="text/css">
+  body {
+      margin: 0;
+      overflow: hidden;
+  }
+  #iframe1 {
+      position:absolute;
+      left: 0px;
+      width: 100%;
+      top: 0px;
+      height: 100%;
+  }
+  </style>
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -7,7 +20,7 @@
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
     <script src="TemplateData/UnityProgress.js"></script>
-    <script src="Build/UnityLoader.js"></script>
+    <script id="iframe1" src="Build/UnityLoader.js"></script>
     <script>
       var unityInstance = UnityLoader.instantiate("unityContainer", "Build/Gravity Simulation Experiment.json", {onProgress: UnityProgress});
     </script>
